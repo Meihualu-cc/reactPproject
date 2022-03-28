@@ -1,0 +1,10 @@
+## 1. umi脚手架启动报错Cannot read properties of undefined (reading 'forEach')
+    node_modules\react-refresh\cjs\react-refresh-runtime.development.js文件中注释掉
+    490行开始 ->     
+        // hook.renderers.forEach(function (injected, id) {
+        //   if (typeof injected.scheduleRefresh === 'function' && typeof injected.setRefreshHandler === 'function') {
+        //     // This version supports React Refresh.
+        //     helpersByRendererID.set(id, injected);
+        //   }
+        // }); // We also want to track currently mounted roots.
+    
